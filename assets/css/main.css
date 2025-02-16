@@ -2867,3 +2867,10 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+.sitename {
+  font-family: 'Rajdhani', sans-serif; /* Use a futuristic font like Rajdhani, Orbitron, or Exo */
+  font-weight: 500; /* Adjust weight to match */
+  letter-spacing: 2px; /* Space out letters for a sleek look */
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8); /* Adjust according to your theme */
+}
