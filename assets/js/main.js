@@ -64,8 +64,27 @@
   const preloader = document.querySelector('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
-      preloader.remove();
+      // Add loaded class for fade-out animation
+      preloader.classList.add('loaded');
+      // Remove after animation completes
+      setTimeout(() => {
+        if (preloader && preloader.parentElement) {
+          preloader.remove();
+        }
+      }, 800);
     });
+    
+    // Fallback: remove preloader after 5 seconds if page doesn't load
+    setTimeout(() => {
+      if (preloader && preloader.parentElement) {
+        preloader.classList.add('loaded');
+        setTimeout(() => {
+          if (preloader && preloader.parentElement) {
+            preloader.remove();
+          }
+        }, 800);
+      }
+    }, 5000);
   }
 
   /**
