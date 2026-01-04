@@ -5162,3 +5162,356 @@ input[type="submit"]:hover {
     margin-left: 12px;
   }
 }
+
+/*--------------------------------------------------------------
+# Custom Styles for New Sections
+--------------------------------------------------------------*/
+
+/* Solutions Overview Section */
+#solutions-overview {
+  background: #f8f9fa;
+}
+
+#solutions-overview .solution-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#solutions-overview .solution-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12) !important;
+}
+
+#solutions-overview .solution-card h3 {
+  color: #1a252f;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+#solutions-overview .solution-card:hover h3 {
+  color: #c6a100;
+}
+
+/* Why OV Kunststoffe Section */
+#why-ov .d-flex {
+  padding: 20px 0;
+}
+
+#why-ov h4 {
+  color: #1a252f;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+#why-ov i {
+  color: #c6a100;
+  transition: transform 0.3s ease;
+}
+
+#why-ov .d-flex:hover i {
+  transform: scale(1.15);
+}
+
+/* Products Showcase Section */
+.product-section {
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.product-section:last-child {
+  border-bottom: none;
+}
+
+.product-section h2 {
+  font-size: 2rem;
+  color: #1a252f;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.product-section p {
+  color: #666;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.product-cta .btn {
+  padding: 10px 30px;
+  font-weight: 600;
+}
+
+.product-cta .btn-primary {
+  background-color: #c6a100;
+  border-color: #c6a100;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.product-cta .btn-primary:hover {
+  background-color: #a68400;
+  border-color: #a68400;
+  transform: translateX(3px);
+}
+
+.product-cta .btn-outline-primary {
+  color: #c6a100;
+  border-color: #c6a100;
+  transition: all 0.3s ease;
+}
+
+.product-cta .btn-outline-primary:hover {
+  background-color: #c6a100;
+  color: white;
+  transform: translateX(3px);
+}
+
+/* Product Image Styling */
+.product-image img {
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-image:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 15px 40px rgba(198, 161, 0, 0.2);
+}
+
+/* Feature boxes for comparison sections */
+.feature-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(198, 161, 0, 0.15) !important;
+}
+
+.feature-box i {
+  transition: color 0.3s ease;
+}
+
+.feature-box:hover i {
+  color: #a68400;
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+  #solutions-overview .solution-card {
+    margin-bottom: 20px;
+  }
+
+  .product-section h2 {
+    font-size: 1.5rem;
+  }
+
+  #why-ov .col-lg-6 {
+    margin-bottom: 30px;
+  }
+
+  .product-cta {
+    flex-direction: column !important;
+  }
+
+  .product-cta .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Typography Enhancements */
+h1 {
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  color: var(--heading-color);
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  font-size: 1rem;
+  color: #999;
+  margin: 0;
+}
+
+/* Button Consistency */
+.btn-outline-light {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  border-color: #c6a100;
+  background-color: rgba(198, 161, 0, 0.1);
+  color: white;
+  text-decoration: none;
+}
+
+/* Scroll animations */
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+/* Brands Carousel Styles */
+#brands-carousel {
+  padding: 80px 0;
+}
+
+#brands-carousel .section-title h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a252f;
+  margin-bottom: 15px;
+}
+
+#brands-carousel .section-title p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.brands-carousel-wrapper {
+  padding: 50px 20px;
+}
+
+.mySwiper {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.swiper-slide {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-card-carousel {
+  background: white;
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.brand-card-carousel:hover {
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.brand-logo-container {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.brand-card-carousel .brand-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.brand-card-carousel h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a252f;
+  margin-bottom: 12px;
+}
+
+.brand-card-carousel p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.brand-card-carousel .btn-outline-primary {
+  color: #c6a100;
+  border-color: #c6a100;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.brand-card-carousel .btn-outline-primary:hover {
+  background-color: #c6a100;
+  border-color: #c6a100;
+  color: white;
+}
+
+/* Swiper Navigation */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #c6a100;
+  background: rgba(198, 161, 0, 0.1);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #c6a100;
+  color: white;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+  background-color: #c6a100;
+  opacity: 0.5;
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #c6a100;
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #brands-carousel .section-title h2 {
+    font-size: 2.2rem;
+  }
+
+  .brand-card-carousel {
+    padding: 30px 20px;
+  }
+
+  .brand-logo-container {
+    height: 120px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+  }
+}
