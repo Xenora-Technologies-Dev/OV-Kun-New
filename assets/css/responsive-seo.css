@@ -1,0 +1,631 @@
+/**
+ * Enhanced Mobile Responsiveness & SEO Optimization Styles
+ * For OV Kunststoffe - Soundproof Drainage Solutions
+ * Optimized for India market, mobile-first approach
+ */
+
+/* ============================================================================
+   MOBILE-FIRST RESPONSIVE IMPROVEMENTS (320px - 1440px)
+   ============================================================================ */
+
+/* Critical Fix: Hero Section Responsiveness */
+@media (max-width: 480px) {
+  .hero .hero-title,
+  .hero h1 {
+    font-size: 1.6rem !important;
+    white-space: normal !important;
+    line-height: 1.25 !important;
+    margin-bottom: 15px !important;
+    word-wrap: break-word;
+  }
+
+  .hero .hero-subtitle,
+  .hero p {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .hero .btn,
+  .hero-cta-group .btn {
+    padding: 12px 24px !important;
+    font-size: 0.9rem !important;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px !important;
+  }
+
+  .hero-cta-group > * {
+    width: 100%;
+  }
+  
+  .hero-stats {
+    flex-direction: column !important;
+    gap: 12px !important;
+    margin-top: 30px !important;
+  }
+  
+  .hero-stat-item {
+    padding: 15px 20px !important;
+    min-width: unset !important;
+    width: 100% !important;
+    max-width: 200px !important;
+  }
+  
+  .hero-stat-number {
+    font-size: 1.8rem !important;
+  }
+  
+  .hero-tagline {
+    flex-direction: column !important;
+    gap: 6px !important;
+    font-size: 0.8rem !important;
+  }
+  
+  .hero-tagline span {
+    display: block;
+  }
+  
+  .hero-tagline span::before {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Header and Navigation Fixes */
+  .header {
+    padding: 12px 0 !important;
+    min-height: auto;
+    z-index: 10002 !important;
+  }
+
+  .logo img {
+    height: 40px !important;
+    width: auto !important;
+  }
+
+  .sitename {
+    font-size: 1.2rem !important;
+    margin: 0;
+  }
+
+  /* Mobile Nav Improvements */
+  .navmenu ul {
+    inset: 70px 15px auto 15px !important;
+    border-radius: 16px !important;
+    padding: 15px !important;
+  }
+
+  .navmenu ul li a {
+    padding: 14px 18px !important;
+    font-size: 1rem !important;
+    border-radius: 10px !important;
+  }
+  
+  .navmenu .dropdown > ul {
+    margin: 5px 0 10px 15px !important;
+    padding: 10px !important;
+    position: static !important;
+    inset: auto !important;
+  }
+  
+  .navmenu .dropdown ul li a {
+    padding: 12px 15px !important;
+    font-size: 0.95rem !important;
+  }
+
+  /* Button Touch Optimization */
+  .btn {
+    min-height: 48px !important;
+    padding: 12px 24px !important;
+    font-size: 0.95rem !important;
+  }
+
+  .btn-primary {
+    padding: 14px 28px !important;
+  }
+
+  /* Section Title Responsiveness */
+  .section-title h2 {
+    font-size: 1.6rem !important;
+    margin-bottom: 15px !important;
+  }
+
+  .section-title p {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+
+  /* Card and Container Spacing */
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .col-lg-4,
+  .col-lg-6,
+  .col-md-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* Image Responsiveness */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Form Inputs */
+  input,
+  textarea,
+  select {
+    font-size: 16px !important; /* Prevents zoom on iOS */
+    padding: 14px !important;
+    min-height: 48px !important;
+  }
+
+  /* Tables - Make scrollable on mobile */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Footer Responsiveness */
+  footer,
+  .footer {
+    padding: 30px 0 !important;
+  }
+
+  footer .row,
+  .footer .row {
+    margin-bottom: 30px;
+  }
+  
+  .footer-main {
+    padding: 40px 0 30px !important;
+  }
+  
+  .footer-top-banner {
+    padding: 30px 15px !important;
+  }
+  
+  .footer-banner-content h3 {
+    font-size: 1.3rem !important;
+  }
+  
+  .footer-banner-content p {
+    font-size: 0.9rem !important;
+  }
+  
+  /* WOW Cards Mobile */
+  .wow-card {
+    padding: 25px 20px !important;
+  }
+  
+  .wow-card-title {
+    font-size: 1.2rem !important;
+  }
+  
+  .wow-card-badge {
+    font-size: 0.75rem !important;
+    padding: 5px 10px !important;
+  }
+  
+  /* Why Feature Mobile */
+  .why-feature {
+    padding: 15px !important;
+  }
+  
+  .why-feature-icon {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  .why-feature-icon i {
+    font-size: 1.2rem !important;
+  }
+  
+  .why-feature-content h4 {
+    font-size: 1rem !important;
+  }
+  
+  .why-feature-content p {
+    font-size: 0.85rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem !important;
+  }
+
+  h2 {
+    font-size: 1.4rem !important;
+  }
+
+  h3 {
+    font-size: 1.2rem !important;
+  }
+
+  h4 {
+    font-size: 1.1rem !important;
+  }
+
+  h5 {
+    font-size: 1rem !important;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Very Small Devices (320px - 375px) */
+@media (max-width: 375px) {
+  .hero h1 {
+    font-size: 1.5rem !important;
+    letter-spacing: 0 !important;
+  }
+
+  .sitename {
+    font-size: 1.1rem !important;
+  }
+
+  .section-title h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    padding: 0 10px;
+  }
+
+  .btn {
+    padding: 10px 15px !important;
+    font-size: 0.85rem !important;
+  }
+}
+
+/* ============================================================================
+   TABLET OPTIMIZATION (769px - 1024px)
+   ============================================================================ */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .container-xl {
+    max-width: 95%;
+  }
+
+  .col-lg-4 {
+    flex: 0 0 calc(50% - 10px);
+  }
+
+  .col-lg-6 {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+
+/* ============================================================================
+   DESKTOP OPTIMIZATION (1025px+)
+   ============================================================================ */
+
+@media (min-width: 1025px) {
+  .container-xl {
+    max-width: 1200px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* ============================================================================
+   LANDSCAPE ORIENTATION FIX
+   ============================================================================ */
+
+@media (max-height: 600px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: 40px 0 !important;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem !important;
+    margin-bottom: 10px !important;
+  }
+
+  .hero p {
+    font-size: 0.9rem !important;
+    margin-bottom: 15px !important;
+  }
+}
+
+/* ============================================================================
+   VISIBILITY & READABILITY IMPROVEMENTS
+   ============================================================================ */
+
+/* Ensure readable text sizes */
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Prevent horizontal scroll on narrow devices */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Readable line heights on mobile */
+p,
+li {
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3;
+}
+
+/* ============================================================================
+   TOUCH-FRIENDLY SPACING
+   ============================================================================ */
+
+/* Ensure clickable areas are at least 48x48px */
+a,
+button,
+input[type="button"],
+input[type="submit"],
+.btn,
+.nav-link,
+[role="button"] {
+  min-height: 48px;
+  min-width: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Link padding for better touch targets */
+a[href] {
+  padding: 8px 4px;
+}
+
+/* ============================================================================
+   FORM IMPROVEMENTS FOR MOBILE
+   ============================================================================ */
+
+input,
+textarea,
+select,
+button {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px; /* Prevents iOS zoom */
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* ============================================================================
+   IMAGE LAZY LOADING SETUP
+   ============================================================================ */
+
+img[loading="lazy"] {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* ============================================================================
+   VIDEO & IFRAME RESPONSIVENESS
+   ============================================================================ */
+
+iframe,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive embed container */
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.embed-responsive::before {
+  content: "";
+  display: block;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.embed-responsive iframe,
+.embed-responsive object,
+.embed-responsive embed {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ============================================================================
+   PRINT STYLES
+   ============================================================================ */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+
+  h1,
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* ============================================================================
+   ACCESSIBILITY IMPROVEMENTS
+   ============================================================================ */
+
+/* Focus states for keyboard navigation */
+:focus {
+  outline: 3px solid #c6a100;
+  outline-offset: 2px;
+}
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #c6a100;
+  outline-offset: 2px;
+}
+
+/* Skip to main content link */
+.skip-to-main {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #c6a100;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-to-main:focus {
+  top: 0;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: more) {
+  body {
+    border: 1px solid #000;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+/* ============================================================================
+   DARK MODE SUPPORT
+   ============================================================================ */
+
+@media (prefers-color-scheme: dark) {
+  input,
+  textarea,
+  select {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #444;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #888;
+  }
+}
+
+/* ============================================================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================================================ */
+
+/* GPU acceleration for smooth animations */
+.hero,
+.carousel,
+[data-aos],
+.animated {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optimize font loading */
+/* @font-face rules should be defined with font-family and src properties */

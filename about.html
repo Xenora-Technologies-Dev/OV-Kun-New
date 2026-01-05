@@ -3,10 +3,29 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About - UpConstruction Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  
+  <!-- SEO Meta Tags -->
+  <title>About OV Kunststoffe - Soundproof Drainage Distributor India</title>
+  <meta name="description" content="OV Kunststoffe is the exclusive distributor of premium soundproof drainage systems from Ostendorf KunststoffE in India. Learn about our mission and values.">
+  <meta name="keywords" content="about OV Kunststoffe, distributor company, Ostendorf distributor, drainage solutions India, company information">
+  <meta name="author" content="OV Kunststoffe">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  
+  <!-- Geo Tags -->
+  <meta name="geo.region" content="IN">
+  <meta name="geo.country" content="IN">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="About OV Kunststoffe">
+  <meta property="og:description" content="Learn about OV Kunststoffe's mission to bring premium German drainage solutions to India.">
+  <meta property="og:url" content="https://ovkunststoffe.com/about.html">
+  
+  <!-- Canonical -->
+  <link rel="canonical" href="https://ovkunststoffe.com/about.html">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -27,6 +46,9 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!-- WOW Factor Enhancement CSS -->
+  <link href="assets/css/wow-factor.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: UpConstruction
@@ -43,19 +65,26 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img style="height: 250px;width: 50px;" src="assets/img/ov-png.png" alt="">
-        <h1 class="sitename">OV Kunststoffe</h1> <span>.</span>
+        <img src="assets/img/ov-png.png" alt="OV Kunststoffe Logo">
+        <h1 class="sitename">OV Kunststoffe</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <!-- <li><a href="about.html" class="active">About</a></li> -->
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#features">Brands</a></li>
-          <!-- <li><a href="blog.html">Blog</a></li> -->
-          <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="services-full.html">Services</a></li>
+          <li class="dropdown"><a href="products.html"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="ostendorf-htsafe.html"><i class="bi bi-droplet-fill"></i> HT Safe® Drainage</a></li>
+              <li><a href="ostendorf-skolan.html"><i class="bi bi-droplet-half"></i> Skolan Safe® Premium</a></li>
+              <li><a href="ostendorf-multilayer.html"><i class="bi bi-thermometer-half"></i> Multilayer System</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a href="products.html"><i class="bi bi-grid-fill"></i> View All Products</a></li>
+            </ul>
+          </li>
+          <li><a href="brands.html">Brands</a></li>
+          <li><a href="become-distributor.html">Become Distributor</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -666,7 +695,7 @@
         <div class="row align-items-center gy-3">
           <div class="col-md-6">
             <div class="copyright-text">
-              <p>&copy; <span id="year">2025</span> <strong>OV Kunststoffe Industries Private Limited</strong>. All Rights Reserved.</p>
+              <p>&copy; <span id="year">2026</span> <strong>OV Kunststoffe Industries Private Limited</strong>. All Rights Reserved.</p>
             </div>
           </div>
           <div class="col-md-6">
@@ -681,7 +710,7 @@
         </div>
         <div class="row mt-3">
           <div class="col-12 text-center">
-            <p class="credits-text">Designed and Developed by <a href="https://xenora.com" target="_blank"><strong>XENORA Technologies</strong></a></p>
+            <p class="credits-text">Designed and Developed by <a href="#"><strong>XENORA Technologies</strong></a></p>
           </div>
         </div>
       </div>
@@ -706,6 +735,35 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- German Partner Indicator - Mobile Friendly -->
+  <div class="german-partner-indicator" id="german-partner">
+    <div class="german-partner-card">
+      <button class="close-partner" onclick="document.getElementById('german-partner').style.display='none'" aria-label="Close">
+        <i class="bi bi-x"></i>
+      </button>
+      <div class="flag-badge">
+        <span class="flag-emoji">🇩🇪</span>
+        <span class="badge-text">Made in Germany</span>
+      </div>
+      <p class="tagline">German Engineering Excellence, Now in India</p>
+      <a href="become-distributor.html" class="partner-link">
+        Partner With Us <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Floating CTA Widget -->
+  <div class="floating-cta-widget">
+    <a href="https://wa.me/919605750007" target="_blank" class="cta-button cta-whatsapp" title="Message Us on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+      <span class="cta-button-label">WhatsApp</span>
+    </a>
+    <a href="mailto:info@ov-kunststoffe.com" class="cta-button cta-email" title="Email Us">
+      <i class="fas fa-envelope"></i>
+      <span class="cta-button-label">Email Us</span>
+    </a>
+  </div>
 
 </body>
 

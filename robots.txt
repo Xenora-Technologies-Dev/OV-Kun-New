@@ -1,0 +1,43 @@
+# Robots.txt for OV Kunststoffe
+# Optimized for search engine crawling and indexing
+
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: *.html$
+Allow: *.css$
+Allow: *.js$
+
+# Disallow private directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /tmp/
+
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://ovkunststoffe.com/sitemap.xml
+
+# Crawl delay for general bots (in seconds)
+Crawl-delay: 1
+
+# Request rate
+Request-rate: 1/10s

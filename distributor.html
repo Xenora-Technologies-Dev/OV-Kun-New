@@ -27,30 +27,41 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!-- WOW Factor Enhancement CSS -->
+  <link href="assets/css/wow-factor.css" rel="stylesheet">
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <h1>OV Kunststoffe</h1>
+        <img src="assets/img/ov-png.png" alt="OV Kunststoffe Logo">
+        <h1 class="sitename">OV Kunststoffe</h1>
       </a>
 
-      <nav id="navbar" class="navbar">
+      <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="services-full.html">Services</a></li>
-          <li><a href="products.html">Products</a></li>
+          <li class="dropdown"><a href="products.html"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="ostendorf-htsafe.html"><i class="bi bi-droplet-fill"></i> HT Safe® Drainage</a></li>
+              <li><a href="ostendorf-skolan.html"><i class="bi bi-droplet-half"></i> Skolan Safe® Premium</a></li>
+              <li><a href="ostendorf-multilayer.html"><i class="bi bi-thermometer-half"></i> Multilayer System</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a href="products.html"><i class="bi bi-grid-fill"></i> View All Products</a></li>
+            </ul>
+          </li>
           <li><a href="brands.html">Brands</a></li>
-          <li><a href="distributor.html" class="active">Become Distributor</a></li>
+          <li><a href="become-distributor.html" class="active">Become Distributor</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav><!-- .navbar -->
-
-      <i class="mobile-nav-toggle mobile-nav-active bi bi-list"></i>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
     </div>
   </header><!-- End Header -->
@@ -72,7 +83,7 @@
         <div class="row justify-content-center mb-5">
           <div class="col-lg-8 text-center">
             <h2 class="section-title">Why Partner With OV Kunststoffe?</h2>
-            <p class="lead">As the sole authorized distributor for premium German and European products in India, we offer exclusive partnership opportunities with exceptional growth potential.</p>
+            <p class="lead">As the sole authorized distributor for premium German products in India, we offer exclusive partnership opportunities with exceptional growth potential.</p>
           </div>
         </div>
 
