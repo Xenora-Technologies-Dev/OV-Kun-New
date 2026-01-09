@@ -9,39 +9,42 @@
 
   /**
    * Apply .scrolled class to the body as the page is scrolled down
-   * Show header logo when scrolled past the brand frame section
+   * Show header logo when scrolled past the exclusive dealer section
    */
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
     if (!selectHeader) return;
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
     
     // Get the exclusive-dealer section to determine when to show logo
     const exclusiveSection = document.querySelector('#exclusive-dealer');
-    const brandFrame = document.querySelector('.hero-brand-frame');
+    const heroSection = document.querySelector('#hero');
     
     // Calculate threshold - show logo when reaching exclusive dealer section
-    let logoThreshold = 100;
+    let logoThreshold = window.innerHeight * 0.8; // Default to 80% of viewport
+    
     if (exclusiveSection) {
-      logoThreshold = exclusiveSection.offsetTop - 100;
-    } else if (brandFrame) {
-      logoThreshold = brandFrame.offsetTop + brandFrame.offsetHeight;
+      // Trigger transition when exclusive dealer section comes into view
+      logoThreshold = exclusiveSection.offsetTop - window.innerHeight * 0.2;
+    } else if (heroSection) {
+      // Fallback: trigger after hero section
+      logoThreshold = heroSection.offsetHeight * 0.9;
     }
     
+    // Basic scrolled class for general header styling
     if (window.scrollY > 100) {
       selectBody.classList.add('scrolled');
-      selectHeader.classList.add('scrolled-header');
     } else {
       selectBody.classList.remove('scrolled');
-      selectHeader.classList.remove('scrolled-header');
     }
     
-    // Show/hide header logo based on scroll position past brand intro
+    // Show/hide header logo and background based on scroll position
     if (window.scrollY > logoThreshold) {
       selectHeader.classList.add('show-header-logo');
+      selectBody.classList.add('header-visible');
     } else {
       selectHeader.classList.remove('show-header-logo');
+      selectBody.classList.remove('header-visible');
     }
   }
 

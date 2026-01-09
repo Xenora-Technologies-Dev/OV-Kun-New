@@ -163,14 +163,27 @@ h4 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(255, 255, 255, 0);
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
+  --background-color: rgba(255, 255, 255, 0.95);
+  --default-color: #3c3c3c;
+  --heading-color: #3c3c3c;
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Index page gets special transparent treatment via wow-factor.css */
+.index-page .header {
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --background-color: transparent;
+  color: var(--default-color);
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
 }
 
 .header .logo img {
@@ -199,10 +212,45 @@ h4 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(255, 255, 255, 0.95);
+  --background-color: rgba(255, 255, 255, 0.98);
   --heading-color: #3c3c3c;
   --nav-color: #3c3c3c;
-  --nav-hover-color: #3c3c3c;
+  --nav-hover-color: #c6a100;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Navigation color variables for better visibility */
+.header {
+  --nav-color: #3c3c3c;
+  --nav-hover-color: #c6a100;
+}
+
+/* Index page navigation colors */
+.index-page .header {
+  --nav-color: #ffffff;
+  --nav-hover-color: #c6a100;
+}
+
+/* Index page navigation colors when scrolled - change to dark */
+.index-page.scrolled .header,
+.index-page .scrolled .header,
+body.scrolled.index-page .header {
+  --nav-color: #3c3c3c !important;
+  --default-color: #3c3c3c !important;
+  --heading-color: #3c3c3c !important;
+}
+
+/* Force navigation text color on scrolled index page */
+.scrolled.index-page .header .navmenu a,
+.scrolled.index-page .header .navmenu a:focus,
+body.scrolled.index-page .header .navmenu a,
+body.scrolled.index-page .header .navmenu a:focus {
+  color: #3c3c3c !important;
+}
+
+.scrolled.index-page .header .navmenu a i,
+body.scrolled.index-page .header .navmenu a i {
+  color: #3c3c3c !important;
 }
 
 /*--------------------------------------------------------------
