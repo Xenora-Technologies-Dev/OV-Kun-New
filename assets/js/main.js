@@ -9,6 +9,7 @@
 
   /**
    * Apply .scrolled class to the body as the page is scrolled down
+   * Show header logo when scrolled past the brand frame section
    */
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
@@ -16,12 +17,31 @@
     if (!selectHeader) return;
     if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
     
+    // Get the exclusive-dealer section to determine when to show logo
+    const exclusiveSection = document.querySelector('#exclusive-dealer');
+    const brandFrame = document.querySelector('.hero-brand-frame');
+    
+    // Calculate threshold - show logo when reaching exclusive dealer section
+    let logoThreshold = 100;
+    if (exclusiveSection) {
+      logoThreshold = exclusiveSection.offsetTop - 100;
+    } else if (brandFrame) {
+      logoThreshold = brandFrame.offsetTop + brandFrame.offsetHeight;
+    }
+    
     if (window.scrollY > 100) {
       selectBody.classList.add('scrolled');
       selectHeader.classList.add('scrolled-header');
     } else {
       selectBody.classList.remove('scrolled');
       selectHeader.classList.remove('scrolled-header');
+    }
+    
+    // Show/hide header logo based on scroll position past brand intro
+    if (window.scrollY > logoThreshold) {
+      selectHeader.classList.add('show-header-logo');
+    } else {
+      selectHeader.classList.remove('show-header-logo');
     }
   }
 
