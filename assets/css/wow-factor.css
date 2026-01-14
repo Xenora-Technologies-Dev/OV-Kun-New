@@ -2314,3 +2314,118 @@ body:not(.index-page) .header .navmenu ul li a:hover {
   color: white;
   font-size: 1.5rem;
 }
+
+/* ============================================================================
+   INDIA STOCK POINTS SECTION
+   ============================================================================ */
+.stock-points-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(198, 161, 0, 0.1);
+  margin-top: 30px;
+}
+
+.stock-point-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+  border: 2px solid transparent;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.stock-point-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-gold);
+  transform: scaleX(0);
+  transition: var(--transition-normal);
+}
+
+.stock-point-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-gold);
+}
+
+.stock-point-card:hover::before {
+  transform: scaleX(1);
+}
+
+.stock-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: var(--gradient-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-gold);
+  transition: var(--transition-normal);
+}
+
+.stock-point-card:hover .stock-icon {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-glow);
+}
+
+.stock-icon i {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.stock-point-card h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+}
+
+.stock-point-card p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.availability-badge {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .stock-points-section {
+    padding: 30px 20px;
+    border-radius: 15px;
+  }
+  
+  .stock-point-card {
+    margin-bottom: 20px;
+  }
+  
+  .stock-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .stock-icon i {
+    font-size: 2rem;
+  }
+}
