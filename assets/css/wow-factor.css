@@ -89,7 +89,29 @@
 
 .index-page .show-header-logo .header .logo h1,
 .index-page .scrolled .header .logo h1 {
+  color: inherit !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+/* When header becomes visible with white background, ensure text colors work properly */
+.index-page .show-header-logo .header .logo h1 .brand-ov-inline,
+.index-page .scrolled .header .logo h1 .brand-ov-inline {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+}
+
+.index-page .show-header-logo .header .logo h1 .brand-kunststoffe-inline,
+.index-page .scrolled .header .logo h1 .brand-kunststoffe-inline {
   color: #3c3c3c !important;
+  font-weight: 700;
+  letter-spacing: -0.3px;
 }
 
 /* Hide logo initially on hero page */
@@ -260,6 +282,22 @@ body:not(.index-page) .header .navmenu ul li a:hover {
   visibility: visible;
   pointer-events: auto;
   width: auto;
+}
+
+/* Ensure split branding works in hero header logo */
+.header-hero-page.show-header-logo .hero-header-logo .sitename .brand-ov-inline {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+}
+
+.header-hero-page.show-header-logo .hero-header-logo .sitename .brand-kunststoffe-inline {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -0.3px;
 }
 
 /* ============================================================================
@@ -494,6 +532,62 @@ body:not(.index-page) .header .navmenu ul li a:hover {
     font-size: 0.6rem;
     letter-spacing: 1px;
   }
+}
+
+/* ============================================================================
+   UNIFIED BRANDING STYLES FOR OV KUNSTSTOFFE (Inline Usage Throughout Site)
+   ============================================================================ */
+/* Inline branding class for split-colored "OV Kunststoffe" */
+.brand-split-inline {
+  display: inline;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.brand-ov-inline {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+}
+
+.brand-kunststoffe-inline {
+  color: var(--primary-dark);
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+/* For dark backgrounds */
+.dark-bg .brand-kunststoffe-inline {
+  color: #ffffff;
+}
+
+/* Tagline styling */
+.brand-tagline {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--primary-gold);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.dark-bg .brand-tagline {
+  color: var(--primary-gold);
+}
+
+/* Subtitle styling - "Industries Private Limited" */
+.brand-subtitle-inline {
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.dark-bg .brand-subtitle-inline {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* ============================================================================
